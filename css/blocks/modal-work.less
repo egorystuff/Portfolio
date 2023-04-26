@@ -92,15 +92,16 @@
   color: @black;
   text-transform: uppercase;
   background: none;
-  border: 0;
-  padding: 0.3rem;
+  border: solid 1px @black;
+  border-radius: 20px;
+  padding: 0.3rem 0.6rem;
   cursor: pointer;
 
   font-family: inherit;
 
   &:hover {
-    border: solid 1px @black;
+    background-color: @gray-light;
 
-    transition: 0.5s linear;
+    transition: 0.3s linear;
   }
 }

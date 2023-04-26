@@ -186,6 +186,10 @@ p {
   font-size: 0.94rem;
   font-weight: 700;
 }
+.btn--thin {
+  min-width: 145px;
+  font-size: 0.8rem;
+}
 .works {
   margin: 2.8rem 0;
 }
@@ -518,6 +522,17 @@ p {
 .modal__close:hover {
   transform: rotate(90deg);
 }
+.modal__content {
+  padding: 5rem 1rem;
+}
+.modal__title {
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #2b2a2c;
+  font-weight: 700;
+  text-align: center;
+}
 .modal-work {
   display: flex;
 }
@@ -592,15 +607,113 @@ p {
   color: #2b2a2c;
   text-transform: uppercase;
   background: none;
-  border: 0;
-  padding: 0.3rem;
+  border: solid 1px #2b2a2c;
+  border-radius: 20px;
+  padding: 0.3rem 0.6rem;
   cursor: pointer;
   font-family: inherit;
 }
 .modal-work__btn:hover {
-  border: solid 1px #2b2a2c;
-  transition: 0.5s linear;
+  background-color: #8d8d8e;
+  transition: 0.3s linear;
+}
+.timeline {
+  margin: 4.2rem auto;
+  display: flex;
+  width: 100%;
+  min-width: 768px;
+  position: relative;
+}
+.timeline::before {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: #2b2a2c;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 1;
+}
+.timeline__col {
+  width: 50%;
+}
+.timeline__col--left {
+  text-align: right;
+  padding-right: 3.2rem;
+}
+.timeline__col--right {
+  padding-left: 3.2rem;
+}
+.timeline__title {
+  margin-bottom: 2.6rem;
+  font-size: 1.2rem;
+  color: #2b2a2c;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.timeline__item {
+  margin-bottom: 2.6rem;
+}
+.timeline__item:last-child {
+  margin-bottom: 0;
+}
+.timeline__date {
+  display: block;
+  text-decoration: underline;
+  font-size: 1rem;
+  color: #2b2a2c;
+  margin-bottom: 1rem;
+}
+.timeline__subtitle {
+  font-size: 1.06rem;
+  color: #2b2a2c;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+.timelint__position {
+  font-size: 1rem;
+  color: #2b2a2c;
+  font-style: italic;
+}
+.timeline__text {
+  font-size: 0.8rem;
+  color: #6a696b;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-top: 0.8rem;
+}
+.progress-bar {
+  margin-bottom: 2.6rem;
+}
+.progress-bar__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.2rem;
+}
+.progress-bar__left {
+  min-width: 100px;
+}
+.progress-bar__title {
+  font-size: 0.94rem;
+  font-weight: 300;
+}
+.progress-bar__right {
+  padding-left: 1.2rem;
+}
+.progress-bar__bar {
+  width: 139px;
+  height: 6px;
+  background-color: #efefef;
+}
+.progress-bar__progress {
+  height: 100%;
+  transition: width 0.2s linear;
+  background-color: #6a696b;
 }
 .text-center {
   text-align: center;
+}
+.text-right {
+  text-align: right;
 }
