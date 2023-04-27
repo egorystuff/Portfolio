@@ -23,6 +23,10 @@
   margin: auto;
 
   background-color: fade(@white, 80%);
+
+  &--sm {
+    max-width: 900px;
+  }
 }
 
 .modal__close {
@@ -58,5 +62,15 @@
   color: @black;
   font-weight: 700;
 
-  text-align: center;
+  &--v2 {
+    margin-bottom: 0;
+  }
+}
+
+.modal__subtitle {
+  text-transform: uppercase;
+  font-style: 1.06rem;
+  color: @black;
+
+  font-weight: 400;
 }
