@@ -1,0 +1,23 @@
+{
+	"name": "portfolio",
+	"version": "1.0.0",
+	"description": "Portfolio",
+	"main": "index.js",
+	"homepage": "https://github.com/egorystuff/Portfolio",
+	"scripts": {
+		"deploy": "gh-pages -d src"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/egorystuff/Portfolio.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/egorystuff/Portfolio/issues"
+	},
+	"devDependencies": {
+		"gh-pages": "^5.0.0"
+	}
+}
