@@ -435,6 +435,16 @@ p {
     padding: 0.5em 0.8em;
   }
 }
+@media (max-width: 767px) {
+  .btn--thin {
+    display: inline-block;
+    min-width: 145px;
+    font-size: 0.8rem;
+  }
+  .btn--thin + .btn {
+    margin-top: 0;
+  }
+}
 .works {
   margin: 2.8rem 0;
 }
@@ -934,6 +944,16 @@ p {
 .modal__title--v2 {
   margin-bottom: 0;
 }
+@media (max-width: 767px) {
+  .modal__title--v2 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 767px) {
+  .modal__title {
+    font-size: 2rem;
+  }
+}
 .modal__subtitle {
   text-transform: uppercase;
   font-style: 1.06rem;
@@ -942,11 +962,22 @@ p {
 }
 .modal-work {
   display: flex;
+  flex-wrap: wrap;
 }
 .modal-work__preview {
   width: 65%;
   position: relative;
   overflow: hidden;
+}
+@media (max-width: 1199px) {
+  .modal-work__preview {
+    width: 50%;
+  }
+}
+@media (max-width: 991px) {
+  .modal-work__preview {
+    display: none;
+  }
 }
 .modal-work__photo {
   position: absolute;
@@ -959,6 +990,16 @@ p {
   width: 35%;
   padding: 3.4rem 6.6rem 1rem 2rem;
   position: relative;
+}
+@media (max-width: 1199px) {
+  .modal-work_content {
+    width: 50%;
+  }
+}
+@media (max-width: 991px) {
+  .modal-work_content {
+    width: 100%;
+  }
 }
 .modal-work__header {
   margin-bottom: 2.2rem;
@@ -1027,6 +1068,7 @@ p {
 .timeline {
   margin: 4.2rem auto;
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   min-width: 768px;
   position: relative;
@@ -1042,6 +1084,14 @@ p {
   left: 50%;
   z-index: 1;
 }
+@media (max-width: 767px) {
+  .timeline {
+    min-width: 300px;
+  }
+  .timeline::before {
+    background: none;
+  }
+}
 .timeline__col {
   width: 50%;
 }
@@ -1051,6 +1101,19 @@ p {
 }
 .timeline__col--right {
   padding-left: 3.2rem;
+}
+@media (max-width: 767px) {
+  .timeline__col {
+    width: 100%;
+  }
+  .timeline__col--left {
+    text-align: center;
+    padding-right: 0;
+  }
+  .timeline__col--right {
+    text-align: center;
+    padding-left: 0;
+  }
 }
 .timeline__title {
   margin-bottom: 2.6rem;
@@ -1093,6 +1156,15 @@ p {
 .progress-bar {
   margin-bottom: 2.6rem;
 }
+@media (max-width: 767px) {
+  .progress-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
 .progress-bar__item {
   display: flex;
   align-items: center;
@@ -1120,11 +1192,32 @@ p {
 }
 .contact {
   display: flex;
+  flex-wrap: wrap;
   background: url(https://placekitten.com/470/450) right center no-repeat;
+}
+@media (max-width: 991px) {
+  .contact {
+    background-size: 400px;
+  }
+}
+@media (max-width: 767px) {
+  .contact {
+    background-size: 300px;
+  }
+}
+@media (max-width: 565px) {
+  .contact {
+    background: none;
+  }
 }
 .contact__left {
   width: 47%;
   padding: 2rem;
+}
+@media (max-width: 565px) {
+  .contact__left {
+    width: 100%;
+  }
 }
 .contact__info {
   margin: 2rem 0 3rem;

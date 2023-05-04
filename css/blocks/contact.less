@@ -1,35 +1,51 @@
 // main: ../style.less
 
 .contact {
-  display: flex;
-  background: url(https://placekitten.com/470/450) right center no-repeat;
+	display: flex;
+	flex-wrap: wrap;
+	background: url(https://placekitten.com/470/450) right center no-repeat;
+
+	@media @tablet {
+		background-size: 400px;
+	}
+
+	@media @mobile {
+		background-size: 300px;
+	}
+
+	@media @mobile-sm {
+		background: none;
+	}
 }
 
 .contact__left {
-  width: 47%;
+	width: 47%;
+	padding: 2rem;
 
-  padding: 2rem;
+	@media @mobile-sm {
+		width: 100%;
+	}
 }
 
 .contact__info {
-  margin: 2rem 0 3rem;
-  padding: 0;
-  list-style: none;
+	margin: 2rem 0 3rem;
+	padding: 0;
+	list-style: none;
 
-  font-style: 1rem;
-  color: @black;
-  font-weight: 300;
+	font-style: 1rem;
+	color: @black;
+	font-weight: 300;
 }
 
 .contact__info-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 0.7rem;
-  &:last-child {
-    margin-bottom: 0;
-  }
+	display: flex;
+	align-items: center;
+	margin-bottom: 0.7rem;
+	&:last-child {
+		margin-bottom: 0;
+	}
 }
 
 .contact__info-icon {
-  margin-right: 1rem;
+	margin-right: 1rem;
 }
