@@ -159,6 +159,18 @@ p {
 }
 .header {
   padding: 1.2rem 0;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .header {
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+  }
 }
 .header__inner {
   display: flex;
@@ -191,12 +203,26 @@ p {
 }
 .nav {
   display: flex;
+  flex-wrap: wrap;
   height: 100%;
   align-items: center;
 }
 @media (max-width: 767px) {
   .nav {
     display: none;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 100%;
+    right: 0;
+    z-index: 1000;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  .nav.show {
+    display: flex;
   }
 }
 .nav__link {
@@ -231,6 +257,18 @@ p {
 .nav__link--btn:hover {
   background-color: #2b2a2c;
   color: #fff;
+}
+@media (max-width: 767px) {
+  .nav__link {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    margin-left: 0;
+  }
+}
+@media (max-width: 767px) {
+  .intro {
+    margin-top: 90px;
+  }
 }
 .intro__inner {
   padding-top: 5rem;
@@ -447,6 +485,7 @@ p {
 @media (max-width: 565px) {
   .work {
     max-width: 370px;
+    margin: 0 auto;
   }
 }
 .work__img {
@@ -1145,6 +1184,9 @@ p {
 }
 .burger {
   display: none;
+  padding: 0;
+  border: 0;
+  background: none;
 }
 @media (max-width: 767px) {
   .burger {
