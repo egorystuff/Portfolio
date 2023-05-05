@@ -1,0 +1,17 @@
+https://www.youtube.com/watch?v=sL6VvWOAuLE&t=355s     // about Node Package Manager  (NPM)
+
+https://github.com/gitname/react-gh-pages    //  Deploying a React App* to GitHub Pages
+
+
+
+
+
+add     .gitignore
+
+
+
+npm init  -> //added package.json
+
+npm install gh-pages --save-dev   -> //Install the gh-pages npm package
+
+npm run deploy    //Push the app to the GitHub repository
