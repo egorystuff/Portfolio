@@ -13,19 +13,19 @@ add     .gitignore
 
 ```
 
-###added package.json
+### added package.json
 
 ```
 npm init
 ```
 
-###Install the gh-pages npm package
+### Install the gh-pages npm package
 
 ```
 npm install gh-pages --save-dev
 ```
 
-###Push the app to the GitHub repository
+### Push the app to the GitHub repository
 
 ```
 npm run deploy
